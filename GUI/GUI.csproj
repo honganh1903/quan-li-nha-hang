@@ -72,6 +72,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl\ucNhapSanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucNhapSanPham.Designer.cs">
+      <DependentUpon>ucNhapSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ucProgressbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucProgressbar.Designer.cs">
+      <DependentUpon>ucProgressbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ucTrangChu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucTrangChu.Designer.cs">
+      <DependentUpon>ucTrangChu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form\frmChinh.resx">
       <DependentUpon>frmChinh.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,7 +110,14 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControl\ucNhapSanPham.resx">
+      <DependentUpon>ucNhapSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\ucProgressbar.resx">
+      <DependentUpon>ucProgressbar.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -119,8 +144,249 @@
       <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Resource\" />
+    <None Include="Resources\banhang_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banhang_black1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banhang_black2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banhang_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blocks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boxes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-review.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eco-factory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eco-factory1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error-icon-33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_32px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_bill_40px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_clean_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_window_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_window_32px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_customer_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_leadership_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_minimize_window_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_minimize_window_32px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_next_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_next_32px_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_no_access_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_no_entry_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_ok_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_pay_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_previous_32px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_settings_32px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_settings_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Show_Left_Side_Panel_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_trash_can_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_trash_can_32px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_warehouse_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khachhang_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khachhang_black1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khachhang_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_black - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_black - Copy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_black - Copy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_black - Copy3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manufacture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhanvien_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhanvien_black1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhanvien_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sanpham_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sanpham_black1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sanpham_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searching-magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thanhcong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thietlap_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thietlap_black1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thietlap_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thongke_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thongke_black1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thongke_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trangchu_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trangchu_black1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trangchu_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

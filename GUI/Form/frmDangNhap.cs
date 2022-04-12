@@ -23,8 +23,8 @@ namespace GUI
         {
            
 
-            timer1.Start();
-            timer2.Start();
+            //timer1.Start();
+            //timer2.Start();
         }
 
         private void txtTenDangNhap_Enter(object sender, EventArgs e)
@@ -40,6 +40,7 @@ namespace GUI
         private void XuLyDangNhap()
         {
             Cursor = Cursors.AppStarting;
+            Cursor = Cursors.AppStarting;
             if (TaiKhoanBL.Instance.CheckLogin(txtTenDangNhap.Text, txtMatKhau.Text) == true)
             {
                 btnDangNhap.BackColor = Color.FromArgb(0, 100, 0);
@@ -48,7 +49,7 @@ namespace GUI
                 txtMatKhau.Text = "";
                 txtTenDangNhap.Text = "";
                 Cursor = Cursors.Default;
-                MessageBox.Show("Đăng nhập thành công !!!");
+                this.Alert("Đăng nhập thành công...", frmPopupNotification.enmType.Success);
                 frmChinh frm = new frmChinh();
                 frm.Show();
                 this.Hide();
@@ -61,7 +62,12 @@ namespace GUI
                 frm.Show();
             }
         }
-
+        public void Alert(string msg, frmPopupNotification.enmType type)
+        {
+            frmPopupNotification frm = new frmPopupNotification();
+            frm.TopMost = true;
+            frm.showAlert(msg, type);
+        }
         private void txtTenDangNhap_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

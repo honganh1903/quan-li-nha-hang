@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DTO;
+using DAL;
 
 namespace BLL
 {
@@ -21,5 +23,9 @@ namespace BLL
             }
         }
         private NhanVienBL() { }
+        public string GetTenNhanVien(int manv)
+        {
+            return NhanVienDL.Instance.GetTenNhanVien(manv);
+        }
     }
 }

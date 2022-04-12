@@ -23,6 +23,7 @@ namespace DAL
             }
         }
         private TaiKhoanDL() { }
+        #region Lấy mã quyền
         public int GetMaQuyen(int manv)
         {
             string sql = "SELECT * FROM PHANQUYEN WHERE MANV = '" + manv + "'";
@@ -31,6 +32,9 @@ namespace DAL
             string maquyen = dt.Rows[0][1].ToString();
             return int.Parse(maquyen);
         }
+        #endregion
+
+        #region Lấy tên quyền
         public string GetTenQuyen(int maquyen)
         {
             string sql = "SELECT TENQUYEN FROM QUYEN WHERE MAQUYEN = '" + maquyen + "'";
@@ -39,6 +43,9 @@ namespace DAL
             string tenquyen = dt.Rows[0][0].ToString();
             return tenquyen;
         }
+        #endregion
+
+        #region Kiểm tra đăng nhập
         public bool KiemTraDangNhap(string manv, string mk)
         {
             try
@@ -57,5 +64,6 @@ namespace DAL
                 return false;
             }
         }
+        #endregion
     }
 }

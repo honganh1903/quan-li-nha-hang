@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DTO;
+using DAL;
+using System.Data;
 
 namespace BLL
 {
@@ -21,5 +24,10 @@ namespace BLL
             }
         }
         private SanPhamBL() { }
+        public DataTable GetDanhSachSanPham()
+        {
+            return  SanPhamDL.Instance.GetDanhSachSanPham();
+        }
+
     }
 }

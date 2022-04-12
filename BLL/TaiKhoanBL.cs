@@ -38,5 +38,9 @@ namespace BLL
                 return false;
             }
         }
+        public string GetTenQuyen(int maquyen)
+        {
+            return TaiKhoanDL.Instance.GetTenQuyen(maquyen);
+        }
     }
 }

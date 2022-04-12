@@ -1,5 +1,8 @@
-﻿using System;
+﻿using DTO;
+using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,5 +24,15 @@ namespace DAL
             }
         }
         private NhanVienDL() { }
+        #region Lấy tên nhân viên
+        public string GetTenNhanVien(int manv)
+        {
+            string sql = "SELECT * FROM NHANVIEN WHERE MANV = '" + manv + "'";
+            DataTable dt = new DataTable();
+            dt = DataAccess.GetTable(sql);
+            string ten = dt.Rows[0][1].ToString();
+            return ten;
+        }
+        #endregion
     }
 }
