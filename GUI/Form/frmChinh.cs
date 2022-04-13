@@ -193,5 +193,10 @@ namespace GUI
             pnSide.Top = btn.Top;
             pnSide.Height = btn.Height;
         }
+
+        private void btnTrangChu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

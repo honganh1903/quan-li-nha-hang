@@ -28,6 +28,14 @@ namespace BLL
         {
             return  SanPhamDL.Instance.GetDanhSachSanPham();
         }
+        public DataTable GetDanhSachSanPhamTheoNCC(int MANCC)
+        {
+            return SanPhamDL.Instance.GetDanhSachSanPhamTheoNCC(MANCC);
+        }
+        public string GetTenSP(int MASP)
+        {
+            return SanPhamDL.Instance.GetTenSP(MASP);
+        }
 
     }
 }

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using DAL;
+using DTO;
 
 namespace BLL
 {
@@ -21,5 +24,9 @@ namespace BLL
             }
         }
         private CTPNBL() { }
+        public bool ThemCTPN(DataTable dt, int MAPN)
+        {
+            return CTPNDL.Instance.ThemCTPN(dt, MAPN);
+        }
     }
 }

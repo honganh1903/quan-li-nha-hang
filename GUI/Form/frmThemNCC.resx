@@ -117,35 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="MaSP.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="MaNhap.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="MaNV.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="TenSP.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="DonGiaNhap.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="SoLuong.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnTaoPhieu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAXFJREFUWEft
-        lr8uBFEYxSciImzJvopCyauIRqOTSGgUHoXFZsOikEgo6D2FSrFCxzjnu+fayfwx1+zuVPeXnGTud8/3
-        Z+5McZM2SdN0EepDT1BX4XZAw3noGvK8QCvabgc0PLLWY561NTvQhMd+Bq1rfQh5+mbKgmAXOoHe6GjA
-        gUqxVgd6tGiafkAbiu9CF9CCGbMgeA41ZV9lWIdvfmvRMSPIn8ScGfNg453OBuyphG9+Y9EiA9nKkek/
-        fEPbSmd+9tjzXELFY8/ifMF8QVtKrWt+Bf3dnDiv8QBt1mhNab45c8oIa06c3+gpVAu8y9DkzYnLMYIG
-        gC+4OZ5/f9RKLM0ROsDQ2QvcQ0uy0XfMoJbV0CRCBygj/+Y7FgUKVSMfaTpA4Ztj3bMdoFA18pEmA5T+
-        cIjNboAQWMuVjAPEAeIAcYCwAfyV7BW6m5JYi4zUphqYJrmU1lF/qjDxWn4KfTJjSvBKzqv+qtpEIiJJ
-        fgCrZlp8ABcc0gAAAABJRU5ErkJggg==
-</value>
-  </data>
 </root>

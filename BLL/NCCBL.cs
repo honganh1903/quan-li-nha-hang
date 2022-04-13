@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DTO;
+using DAL;
+using System.Data;
 
 namespace BLL
 {
@@ -21,5 +24,13 @@ namespace BLL
             }
         }
         private NCCBL() { }
+        public DataTable GetDanhSachNCC()
+        {
+            return NCCDL.Instance.GetDanhSachNCC();
+        }
+        public bool ThemNCC(NhaCungCapDTO nccDTO)
+        {
+            return NCCDL.Instance.ThemNCC(nccDTO);
+        }
     }
 }

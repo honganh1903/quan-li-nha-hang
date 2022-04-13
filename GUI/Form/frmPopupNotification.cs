@@ -36,6 +36,10 @@ namespace GUI
 
         private int x, y;
 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
         public void showAlert(string msg, enmType type)
         {

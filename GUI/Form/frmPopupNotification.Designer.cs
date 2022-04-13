@@ -66,6 +66,7 @@
             this.btnClose.Size = new System.Drawing.Size(42, 40);
             this.btnClose.TabIndex = 3;
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmPopupNotification
             // 

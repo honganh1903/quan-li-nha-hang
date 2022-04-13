@@ -184,9 +184,9 @@
             this.btnThongKe.ForeColor = System.Drawing.Color.White;
             this.btnThongKe.Image = ((System.Drawing.Image)(resources.GetObject("btnThongKe.Image")));
             this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKe.Location = new System.Drawing.Point(33, 545);
+            this.btnThongKe.Location = new System.Drawing.Point(30, 554);
             this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Size = new System.Drawing.Size(249, 64);
+            this.btnThongKe.Size = new System.Drawing.Size(215, 64);
             this.btnThongKe.TabIndex = 3;
             this.btnThongKe.Text = "Thống kê";
             this.btnThongKe.UseVisualStyleBackColor = false;
@@ -202,7 +202,7 @@
             this.btnKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKhachHang.Location = new System.Drawing.Point(33, 484);
             this.btnKhachHang.Name = "btnKhachHang";
-            this.btnKhachHang.Size = new System.Drawing.Size(249, 64);
+            this.btnKhachHang.Size = new System.Drawing.Size(215, 64);
             this.btnKhachHang.TabIndex = 3;
             this.btnKhachHang.Text = "Khách hàng";
             this.btnKhachHang.UseVisualStyleBackColor = false;
@@ -218,7 +218,7 @@
             this.btnNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNhanVien.Location = new System.Drawing.Point(30, 414);
             this.btnNhanVien.Name = "btnNhanVien";
-            this.btnNhanVien.Size = new System.Drawing.Size(249, 64);
+            this.btnNhanVien.Size = new System.Drawing.Size(215, 64);
             this.btnNhanVien.TabIndex = 3;
             this.btnNhanVien.Text = "Nhân viên";
             this.btnNhanVien.UseVisualStyleBackColor = false;
@@ -234,7 +234,7 @@
             this.btnNhapSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNhapSanPham.Location = new System.Drawing.Point(33, 344);
             this.btnNhapSanPham.Name = "btnNhapSanPham";
-            this.btnNhapSanPham.Size = new System.Drawing.Size(249, 64);
+            this.btnNhapSanPham.Size = new System.Drawing.Size(215, 64);
             this.btnNhapSanPham.TabIndex = 3;
             this.btnNhapSanPham.Text = "Nhập hàng";
             this.btnNhapSanPham.UseVisualStyleBackColor = false;
@@ -251,7 +251,7 @@
             this.btnSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSanPham.Location = new System.Drawing.Point(33, 278);
             this.btnSanPham.Name = "btnSanPham";
-            this.btnSanPham.Size = new System.Drawing.Size(249, 64);
+            this.btnSanPham.Size = new System.Drawing.Size(215, 64);
             this.btnSanPham.TabIndex = 3;
             this.btnSanPham.Text = "Sản phẩm";
             this.btnSanPham.UseVisualStyleBackColor = false;
@@ -267,7 +267,7 @@
             this.btnBanSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBanSanPham.Location = new System.Drawing.Point(30, 218);
             this.btnBanSanPham.Name = "btnBanSanPham";
-            this.btnBanSanPham.Size = new System.Drawing.Size(249, 64);
+            this.btnBanSanPham.Size = new System.Drawing.Size(215, 64);
             this.btnBanSanPham.TabIndex = 3;
             this.btnBanSanPham.Text = "Bán hàng";
             this.btnBanSanPham.UseVisualStyleBackColor = false;
@@ -284,10 +284,11 @@
             this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTrangChu.Location = new System.Drawing.Point(30, 152);
             this.btnTrangChu.Name = "btnTrangChu";
-            this.btnTrangChu.Size = new System.Drawing.Size(249, 64);
+            this.btnTrangChu.Size = new System.Drawing.Size(215, 64);
             this.btnTrangChu.TabIndex = 3;
             this.btnTrangChu.Text = "Trang chủ";
             this.btnTrangChu.UseVisualStyleBackColor = false;
+            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
             // 
             // panel4
             // 

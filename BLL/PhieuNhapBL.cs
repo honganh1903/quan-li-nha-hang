@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using DAL;
+using DTO;
 
 namespace BLL
 {
@@ -26,6 +27,27 @@ namespace BLL
         public DataTable GetDanhSachPhieuNhap()
         {
             return PhieuNhapDL.Instance.GetDanhSachPhieuNhap();
+        }
+        public bool ThemPhieuNhap(PhieuNhapDTO pnDTO)
+        {
+            return PhieuNhapDL.Instance.ThemPhieuNhap(pnDTO);
+        }
+        public int GetMAPNMax()
+        {
+            return PhieuNhapDL.Instance.GetMAPNMax();
+        }
+        public bool XoaPN(int MAPN)
+        {
+            return PhieuNhapDL.Instance.XoaPN(MAPN);
+        }
+
+        public bool XacNhan(int MaPhieu)
+        {
+            return PhieuNhapDL.Instance.XacNhan(MaPhieu);
+        }
+        public bool CapNhatSoLuong(int MaPhieu)
+        {
+            return PhieuNhapDL.Instance.CapNhatSoLuong(MaPhieu);
         }
     }
 }
