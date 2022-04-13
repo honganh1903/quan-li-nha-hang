@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pnLeft = new System.Windows.Forms.Panel();
+            this.pnSide = new System.Windows.Forms.Panel();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.btnKhachHang = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnControls = new System.Windows.Forms.Panel();
-            this.pnSide = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.pnLeft.SuspendLayout();
@@ -63,9 +63,9 @@
             this.panel2.Controls.Add(this.btnThoat);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(282, 0);
+            this.panel2.Location = new System.Drawing.Point(263, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(898, 48);
+            this.panel2.Size = new System.Drawing.Size(917, 48);
             this.panel2.TabIndex = 1;
             // 
             // btnThoat
@@ -102,9 +102,9 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.ForeColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(282, 48);
+            this.panel3.Location = new System.Drawing.Point(263, 48);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(898, 98);
+            this.panel3.Size = new System.Drawing.Size(917, 98);
             this.panel3.TabIndex = 2;
             // 
             // lbQuyen
@@ -164,8 +164,16 @@
             this.pnLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnLeft.Location = new System.Drawing.Point(0, 0);
             this.pnLeft.Name = "pnLeft";
-            this.pnLeft.Size = new System.Drawing.Size(282, 667);
+            this.pnLeft.Size = new System.Drawing.Size(263, 667);
             this.pnLeft.TabIndex = 0;
+            // 
+            // pnSide
+            // 
+            this.pnSide.BackColor = System.Drawing.Color.White;
+            this.pnSide.Location = new System.Drawing.Point(6, 148);
+            this.pnSide.Name = "pnSide";
+            this.pnSide.Size = new System.Drawing.Size(18, 64);
+            this.pnSide.TabIndex = 3;
             // 
             // btnThongKe
             // 
@@ -288,7 +296,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(282, 146);
+            this.panel4.Size = new System.Drawing.Size(263, 146);
             this.panel4.TabIndex = 0;
             // 
             // pictureBox1
@@ -303,18 +311,10 @@
             // pnControls
             // 
             this.pnControls.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnControls.Location = new System.Drawing.Point(282, 146);
+            this.pnControls.Location = new System.Drawing.Point(263, 146);
             this.pnControls.Name = "pnControls";
-            this.pnControls.Size = new System.Drawing.Size(898, 521);
+            this.pnControls.Size = new System.Drawing.Size(917, 521);
             this.pnControls.TabIndex = 3;
-            // 
-            // pnSide
-            // 
-            this.pnSide.BackColor = System.Drawing.Color.White;
-            this.pnSide.Location = new System.Drawing.Point(6, 148);
-            this.pnSide.Name = "pnSide";
-            this.pnSide.Size = new System.Drawing.Size(18, 64);
-            this.pnSide.TabIndex = 3;
             // 
             // frmChinh
             // 

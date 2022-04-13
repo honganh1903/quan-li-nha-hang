@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI.UserControl
+namespace GUI.UserControls
 {
-    public partial class ucTrangChu : UserControl
+    public partial class ucBanSanPham : UserControl
     {
-        public ucTrangChu()
+        public ucBanSanPham()
         {
             InitializeComponent();
         }

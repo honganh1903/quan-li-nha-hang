@@ -11,7 +11,7 @@ using BLL;
 
 namespace GUI.UserControls
 {
-    public partial class ucNhapSanPham : UserControl
+    public partial class ucNhapSanPham : UserControls
     {
         public ucNhapSanPham()
         {

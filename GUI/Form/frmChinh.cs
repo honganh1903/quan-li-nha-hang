@@ -107,20 +107,20 @@ namespace GUI
             {
                 switch (ucName)
                 {
-                    //case "ucTrangChu":
-                    //    {
-                    //        ucTrangChu ucTC = new ucTrangChu();
-                    //        ucTC.Dock = DockStyle.Fill;
-                    //        AddControlsIntoPanel(ucTC);
-                    //    }
-                    //    break;
-                    //case "ucSanPham":
-                    //    {
-                    //        ucQuanLySanPham ucSP = new ucQuanLySanPham();
-                    //        ucSP.Dock = DockStyle.Fill;
-                    //        AddControlsIntoPanel(ucSP);
-                    //    }
-                    //    break;
+                    case "ucTrangChu":
+                        {
+                            ucTrangChu ucTC = new ucTrangChu();
+                            ucTC.Dock = DockStyle.Fill;
+                            AddControlsIntoPanel(ucTC);
+                        }
+                        break;
+                    case "ucSanPham":
+                        {
+                            ucQuanLySanPham ucSP = new ucQuanLySanPham();
+                            ucSP.Dock = DockStyle.Fill;
+                            AddControlsIntoPanel(ucSP);
+                        }
+                        break;
                     case "ucNhapSanPham":
                         {
                             ucNhapSanPham ucNSP = new ucNhapSanPham();
@@ -128,34 +128,34 @@ namespace GUI
                             AddControlsIntoPanel(ucNSP);
                         }
                         break;
-                    //case "ucBanSanPham":
-                    //    {
-                    //        ucBanSanPham ucBH = new ucBanSanPham();
-                    //        ucBH.Dock = DockStyle.Fill;
-                    //        AddControlsIntoPanel(ucBH);
-                    //    }
-                    //    break;
-                    //case "ucNhanVien":
-                    //    {
-                    //        ucNhanVien ucNV = new ucNhanVien();
-                    //        ucNV.Dock = DockStyle.Fill;
-                    //        AddControlsIntoPanel(ucNV);
-                    //    }
-                    //    break;
-                    //case "ucKhachHang":
-                    //    {
-                    //        ucKhachHang ucKH = new ucKhachHang();
-                    //        ucKH.Dock = DockStyle.Fill;
-                    //        AddControlsIntoPanel(ucKH);
-                    //    }
-                    //    break;
-                    //case "ucThietLap":
-                    //    {
-                    //        ucThietLap ucTL = new ucThietLap();
-                    //        ucTL.Dock = DockStyle.Fill;
-                    //        AddControlsIntoPanel(ucTL);
-                    //    }
-                    //    break;
+                    case "ucBanSanPham":
+                        {
+                            ucBanSanPham ucBH = new ucBanSanPham();
+                            ucBH.Dock = DockStyle.Fill;
+                            AddControlsIntoPanel(ucBH);
+                        }
+                        break;
+                    case "ucNhanVien":
+                        {
+                            ucNhanVien ucNV = new ucNhanVien();
+                            ucNV.Dock = DockStyle.Fill;
+                            AddControlsIntoPanel(ucNV);
+                        }
+                        break;
+                    case "ucKhachHang":
+                        {
+                            ucKhachHang ucKH = new ucKhachHang();
+                            ucKH.Dock = DockStyle.Fill;
+                            AddControlsIntoPanel(ucKH);
+                        }
+                        break;
+                    case "ucThongKe":
+                        {
+                            ucThongKe ucTL = new ucThongKe();
+                            ucTL.Dock = DockStyle.Fill;
+                            AddControlsIntoPanel(ucTL);
+                        }
+                        break;
                 }
             }));
         }

@@ -1,6 +1,6 @@
-﻿namespace GUI.UserControl
+﻿namespace GUI.UserControls
 {
-    partial class ucTrangChu
+    partial class ucQuanLySanPham
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,8 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // ucQuanLySanPham
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Name = "ucQuanLySanPham";
+            this.Size = new System.Drawing.Size(917, 521);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

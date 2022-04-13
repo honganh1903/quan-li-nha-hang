@@ -72,23 +72,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControl\ucNhapSanPham.cs">
+    <Compile Include="UserControls\ucNhapSanPham.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\ucNhapSanPham.Designer.cs">
+    <Compile Include="UserControls\ucNhapSanPham.designer.cs">
       <DependentUpon>ucNhapSanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\ucProgressbar.cs">
+    <Compile Include="UserControls\ucProgressbar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\ucProgressbar.Designer.cs">
+    <Compile Include="UserControls\ucProgressbar.designer.cs">
       <DependentUpon>ucProgressbar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\ucTrangChu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\ucTrangChu.Designer.cs">
-      <DependentUpon>ucTrangChu.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form\frmChinh.resx">
       <DependentUpon>frmChinh.cs</DependentUpon>
@@ -112,10 +106,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControl\ucNhapSanPham.resx">
+    <EmbeddedResource Include="UserControls\ucNhapSanPham.resx">
       <DependentUpon>ucNhapSanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ucProgressbar.resx">
+    <EmbeddedResource Include="UserControls\ucProgressbar.resx">
       <DependentUpon>ucProgressbar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
