@@ -82,6 +82,18 @@
     <Compile Include="Form\frmThemNCC.Designer.cs">
       <DependentUpon>frmThemNCC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\frmLoaiSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmLoaiSanPham.Designer.cs">
+      <DependentUpon>frmLoaiSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmNCC.Designer.cs">
+      <DependentUpon>frmNCC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControls\ucBanSanPham.cs">
@@ -141,6 +153,9 @@
     <EmbeddedResource Include="Form\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmLoaiSanPham.resx">
+      <DependentUpon>frmLoaiSanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\frmPopupNotification.resx">
       <DependentUpon>frmPopupNotification.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmThongBao.resx">
       <DependentUpon>frmThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmNCC.resx">
+      <DependentUpon>frmNCC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -210,7 +228,9 @@
       <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\banhang_black.png" />
   </ItemGroup>

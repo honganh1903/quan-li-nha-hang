@@ -133,49 +133,6 @@ namespace GUI.UserControls
             }
         }
 
-        private void btnLuu_Click(object sender, EventArgs e)
-        {
-            DataTable dt = new DataTable();
-            foreach (DataGridViewColumn col in dgvCTPN.Columns)
-            {
-                dt.Columns.Add(col.Name);
-            }
-
-            foreach (DataGridViewRow row in dgvCTPN.Rows)
-            {
-                DataRow dRow = dt.NewRow();
-                foreach (DataGridViewCell cell in row.Cells)
-                {
-                    dRow[cell.ColumnIndex] = cell.Value;
-                }
-                dt.Rows.Add(dRow);
-            }
-            if (CTPNBL.Instance.ThemCTPN(dt, mapn))
-            {
-                txtMaSP.Clear();
-                txtTenSP.Clear();
-                txtSoLuong.Clear();
-                txtDonGiaNhap.Clear();
-                dgvCTPN.Rows.Clear();
-
-                mapn = 0;
-                frmThongBao frmtt = new frmThongBao();
-                this.Alert("Lưu phiếu nhập thành công...", frmPopupNotification.enmType.Success);
-
-                dgvPhieuNhap.DataSource = PhieuNhapBL.Instance.GetDanhSachPhieuNhap();
-                dgvPhieuNhap.ClearSelection();
-
-                btnLuu.Enabled = false;
-                btnLuu.BackColor = Color.Gray;
-                btnHuy.Enabled = false;
-                btnHuy.BackColor = Color.Gray;
-                btnThem.Enabled = false;
-                btnThem.BackColor = Color.Gray;
-                lblDaTaoPhieuNhap.Visible = false;
-                btnTaoPhieu.Enabled = true;
-                btnTaoPhieu.BackColor = Color.FromArgb(17, 145, 249);
-            }
-        }
 
         private void dgvPhieuNhap_Click(object sender, EventArgs e)
         {
@@ -217,6 +174,8 @@ namespace GUI.UserControls
                 this.Alert("Đã xác nhận hàng đã về kho...", frmPopupNotification.enmType.Success);
                 dgvPhieuNhap.DataSource = PhieuNhapBL.Instance.GetDanhSachPhieuNhap();
                 dgvPhieuNhap.ClearSelection();
+                dgvSanPham.DataSource = SanPhamBL.Instance.GetDanhSachSanPham();
+                dgvSanPham.ClearSelection();
                 btnXacNhan.Enabled = false;
                 btnXacNhan.BackColor = Color.Gray;
                 btnXoa.Enabled = false;
@@ -262,6 +221,50 @@ namespace GUI.UserControls
                         return;
                     }
                 }
+        }
+
+        private void btnLuu_Click_1(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            foreach (DataGridViewColumn col in dgvCTPN.Columns)
+            {
+                dt.Columns.Add(col.Name);
+            }
+
+            foreach (DataGridViewRow row in dgvCTPN.Rows)
+            {
+                DataRow dRow = dt.NewRow();
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    dRow[cell.ColumnIndex] = cell.Value;
+                }
+                dt.Rows.Add(dRow);
+            }
+            if (CTPNBL.Instance.ThemCTPN(dt, mapn))
+            {
+                txtMaSP.Clear();
+                txtTenSP.Clear();
+                txtSoLuong.Clear();
+                txtDonGiaNhap.Clear();
+                dgvCTPN.Rows.Clear();
+
+                mapn = 0;
+                frmThongBao frmtt = new frmThongBao();
+                this.Alert("Lưu phiếu nhập thành công...", frmPopupNotification.enmType.Success);
+
+                dgvPhieuNhap.DataSource = PhieuNhapBL.Instance.GetDanhSachPhieuNhap();
+                dgvPhieuNhap.ClearSelection();
+
+                btnLuu.Enabled = false;
+                btnLuu.BackColor = Color.Gray;
+                btnHuy.Enabled = false;
+                btnHuy.BackColor = Color.Gray;
+                btnThem.Enabled = false;
+                btnThem.BackColor = Color.Gray;
+                lblDaTaoPhieuNhap.Visible = false;
+                btnTaoPhieu.Enabled = true;
+                btnTaoPhieu.BackColor = Color.FromArgb(17, 145, 249);
+            }
         }
     }
 }

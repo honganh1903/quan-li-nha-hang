@@ -32,5 +32,17 @@ namespace BLL
         {
             return NCCDL.Instance.ThemNCC(nccDTO);
         }
+        public bool ThemNCCFull(NhaCungCapDTO nccDTO)
+        {
+            return NCCDL.Instance.ThemNCCFull(nccDTO);
+        }
+        public bool CapNhatNCC(NhaCungCapDTO nccDTO)
+        {
+            return NCCDL.Instance.CapNhatNCC(nccDTO);
+        }
+        public bool XoaNCC(string MANCC)
+        {
+            return NCCDL.Instance.NgungHopTacNCC(MANCC);
+        }
     }
 }

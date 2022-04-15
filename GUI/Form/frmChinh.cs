@@ -21,9 +21,9 @@ namespace GUI
             InitializeComponent();
         }
         //ColorProgressBar.ColorProgressBar ProgressBar;
-        Label lblPhanTram;
+        //Label lblPhanTram;
         string ucName;
-        Task taskLoadProgressBar;
+        //Task taskLoadProgressBar;
         Task taskLoadUserControl;
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -197,6 +197,61 @@ namespace GUI
         private void btnTrangChu_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Cursor = Cursors.AppStarting;
+            timerPanel.Start();
+            Cursor = Cursors.Default;
+        }
+        int PanelWidth;
+        bool isCollapsed;
+        private void timerpanel_Tick(object sender, EventArgs e)
+        {
+            if (isCollapsed)
+            {
+                pnLeft.Width = pnLeft.Width + 8;
+                if (pnLeft.Width >= PanelWidth)
+                {
+                    timerPanel.Stop();
+                    isCollapsed = false;
+                    this.Refresh();
+                }
+            }
+            else
+            {
+                pnLeft.Width = pnLeft.Width - 8;
+                if (pnLeft.Width <= 64)
+                {
+                    timerPanel.Stop();
+                    isCollapsed = true;
+                    this.Refresh();
+                }
+            }
+        }
+
+        private void btnSanPham_Click(object sender, EventArgs e)
+        {
+            Cursor = Cursors.AppStarting;
+            moveSidePanel(btnSanPham);
+            if (btnSanPham.ForeColor == Color.White)
+            {
+                btnSanPham.ForeColor = Color.FromArgb(255, 255, 254);
+                btnSanPham.BackColor = Color.FromArgb(8, 133, 204);
+
+                check_reset(btnSanPham);
+                AddControl("ucSanPham");
+            }
+            if (btnSanPham.ForeColor == Color.White)
+            {
+                btnSanPham.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 133, 204);
+            }
+            else
+            {
+                btnSanPham.FlatAppearance.MouseDownBackColor = Color.White;
+            }
+            Cursor = Cursors.Default;
         }
     }
 }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using DTO;
 
 namespace DAL
 {
@@ -21,5 +23,22 @@ namespace DAL
             }
         }
         private LoaiSanPhamDL() { }
+        #region Lấy Danh Sách Loại Sản Phẩm
+        public DataTable GetDanhSachLoaiSanPham()
+        {
+            try
+            {
+                string sql = "SELECT MALOAISP AS N'Mã Loại SP', TENLOAISP AS N'Tên Loại SP' FROM LOAISANPHAM WHERE NGUNGKINHDOANH=0";
+                DataTable dt = new DataTable();
+                dt = DataAccess.GetTable(sql);
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("Lỗi database: " + ex.Message);
+                return null;
+            }
+        }
+        #endregion
     }
 }

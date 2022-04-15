@@ -64,5 +64,77 @@ namespace DAL
             }
         }
         #endregion
+
+        #region Thêm NCC Full
+        public bool ThemNCCFull(NhaCungCapDTO nccDTO)
+        {
+            try
+            {
+                string sql = "INSERT INTO NCC(TENNCC,DIACHI,SDT,Email,NgungHopTac) VALUES(N'" + nccDTO.TenNCC + "',N'" + nccDTO.DiaChi + "','" + nccDTO.SDT + "',N'" + nccDTO.Email + "',0)";
+                int rows = DataAccess.JustExcuteNoParameter(sql);
+                if (rows > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("Lỗi database: " + ex.Message);
+                return false;
+            }
+        }
+        #endregion
+
+        #region Cập Nhật NCC
+        public bool CapNhatNCC(NhaCungCapDTO nccDTO)
+        {
+            try
+            {
+                string sql = "UPDATE NCC SET TENNCC=N'" + nccDTO.TenNCC + "',DIACHI=N'" + nccDTO.DiaChi + "',SDT='" + nccDTO.SDT + "',Email=N'" + nccDTO.Email + "' WHERE MANCC='" + nccDTO.MaNCC + "'";
+                int rows = DataAccess.JustExcuteNoParameter(sql);
+                if (rows > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("Lỗi database: " + ex.Message);
+                return false;
+            }
+        }
+        #endregion
+
+        #region Ngừng Hợp Tác NCC
+        public bool NgungHopTacNCC(string MANCC)
+        {
+            try
+            {
+                string sql = "UPDATE NCC SET NGUNGHOPTAC=1 WHERE MANCC='" + MANCC + "'";
+                int rows = DataAccess.JustExcuteNoParameter(sql);
+                if (rows > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("Lỗi database: " + ex.Message);
+                return false;
+            }
+        }
+        #endregion
     }
 }
