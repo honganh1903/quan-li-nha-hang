@@ -16,6 +16,7 @@ namespace GUI
 {
     public partial class frmChinh : Form
     {
+        
         public frmChinh()
         {
             InitializeComponent();
@@ -26,6 +27,25 @@ namespace GUI
         //Task taskLoadProgressBar;
         Task taskLoadUserControl;
 
+        
+        // hàm này để di chuyển form ko có title bar
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                // Release the mouse capture started by the mouse down.
+                panel2.Capture = false;
+
+                // Create and send a WM_NCLBUTTONDOWN message.
+                const int WM_NCLBUTTONDOWN = 0x00A1;
+                const int HTCAPTION = 2;
+                Message msg =
+                    Message.Create(this.Handle, WM_NCLBUTTONDOWN,
+                        new IntPtr(HTCAPTION), IntPtr.Zero);
+                this.DefWndProc(ref msg);
+            }
+        }
+        
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
