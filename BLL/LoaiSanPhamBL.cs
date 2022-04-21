@@ -24,9 +24,18 @@ namespace BLL
             }
         }
         private LoaiSanPhamBL() { }
-        //public DataTable GetDanhSachLoaiSanPham()
-        //{
-        //    return LoaiSanPhamDL.Instance.GetDanhSachLoaiSanPham();
-        //}
+        public DataTable GetDanhSachLoaiSanPham()
+        {
+            return LoaiSanPhamDL.Instance.GetDanhSachLoaiSanPham();
+        }
+        public bool ThemLoaiSanPham(LoaiSanPhamDTO lspDTO)
+        {
+            return LoaiSanPhamDL.Instance.ThemLoaiSanPham(lspDTO);
+        }
+
+        public bool NgungKinhDoanh(string MALOAISP)
+        {
+            return LoaiSanPhamDL.Instance.NgungKinhDoanh(MALOAISP);
+        }
     }
 }

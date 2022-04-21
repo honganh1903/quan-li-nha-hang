@@ -13,8 +13,8 @@ namespace DTO
         public string MaLoaiSP { get; set; }
         public string DVT { get; set; }
         public int MaNCC { get; set; }
-        //public DateTime ngaysx { get; set; }
-        //public DateTime ngayhethan { get; set; }
+        public DateTime NgaySX { get; set; }
+        public DateTime NgayHetHan { get; set; }
         public int SoLuong { get; set; }
         public decimal GiaNhap { get; set; }
         public int LoiNhuan { get; set; }

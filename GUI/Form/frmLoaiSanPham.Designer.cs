@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -38,6 +39,8 @@
             this.txtTen = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.dgvLoaiSanPham = new System.Windows.Forms.DataGridView();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.button9 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picThanhCong)).BeginInit();
@@ -60,8 +63,8 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.11043F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.88957F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.18405F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.81595F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.dgvLoaiSanPham, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -69,8 +72,8 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 236F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 236F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(815, 236);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
@@ -86,11 +89,12 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(598, 230);
+            this.panel1.Size = new System.Drawing.Size(566, 230);
             this.panel1.TabIndex = 0;
             // 
             // picThanhCong
             // 
+            this.picThanhCong.Image = global::GUI.Properties.Resources.check1;
             this.picThanhCong.Location = new System.Drawing.Point(103, 104);
             this.picThanhCong.Name = "picThanhCong";
             this.picThanhCong.Size = new System.Drawing.Size(58, 58);
@@ -113,6 +117,7 @@
             this.btnXoa.TabIndex = 67;
             this.btnXoa.Text = "Ngừng kinh doanh";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnCapNhat
             // 
@@ -144,6 +149,7 @@
             this.btnThem.TabIndex = 69;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtTen
             // 
@@ -154,6 +160,8 @@
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(390, 29);
             this.txtTen.TabIndex = 66;
+            this.txtTen.Click += new System.EventHandler(this.txtTen_Click);
+            this.txtTen.TextChanged += new System.EventHandler(this.txtTen_TextChanged);
             // 
             // label12
             // 
@@ -172,10 +180,31 @@
             this.dgvLoaiSanPham.BackgroundColor = System.Drawing.Color.LightGray;
             this.dgvLoaiSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLoaiSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvLoaiSanPham.Location = new System.Drawing.Point(607, 3);
+            this.dgvLoaiSanPham.Location = new System.Drawing.Point(575, 3);
             this.dgvLoaiSanPham.Name = "dgvLoaiSanPham";
-            this.dgvLoaiSanPham.Size = new System.Drawing.Size(205, 230);
+            this.dgvLoaiSanPham.Size = new System.Drawing.Size(237, 230);
             this.dgvLoaiSanPham.TabIndex = 1;
+            this.dgvLoaiSanPham.Click += new System.EventHandler(this.dgvLoaiSanPham_Click);
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(133)))), ((int)(((byte)(204)))));
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Image = global::GUI.Properties.Resources.icons8_close_window_32px_16;
+            this.button9.Location = new System.Drawing.Point(770, 4);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(33, 31);
+            this.button9.TabIndex = 5;
+            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button9.UseVisualStyleBackColor = false;
             // 
             // frmLoaiSanPham
             // 
@@ -183,6 +212,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(815, 277);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -210,5 +240,7 @@
         private System.Windows.Forms.TextBox txtTen;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridView dgvLoaiSanPham;
+        private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Button button9;
     }
 }

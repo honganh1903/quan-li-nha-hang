@@ -36,6 +36,21 @@ namespace BLL
         {
             return SanPhamDL.Instance.GetTenSP(MASP);
         }
-
+        public bool NgungKinhDoanhSanPham(string MASP)
+        {
+            return SanPhamDL.Instance.NgungKinhDoanhSanPham(MASP);
+        }
+        public bool ThemSanPham(SanPhamDTO spDTO)
+        {
+            return SanPhamDL.Instance.ThemSanPham(spDTO);
+        }
+        public bool SuaSanPham(SanPhamDTO spDTO)
+        {
+            return SanPhamDL.Instance.SuaSanPham(spDTO);
+        }
+        public DataTable GetDanhSachSanPhamTheoBoLoc(string TENSP, string MALOAISP, string MANCC)
+        {
+            return SanPhamDL.Instance.GetDanhSachSanPhamTheoBoLoc(TENSP, MALOAISP, MANCC);
+        }
     }
 }

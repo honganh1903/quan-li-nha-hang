@@ -8,7 +8,7 @@ using DTO;
 
 namespace DAL
 {
-    internal class LoaiSanPhamDL
+    public class LoaiSanPhamDL
     {
         private static LoaiSanPhamDL _Instance;
         public static LoaiSanPhamDL Instance
@@ -23,6 +23,7 @@ namespace DAL
             }
         }
         private LoaiSanPhamDL() { }
+
         #region Lấy Danh Sách Loại Sản Phẩm
         public DataTable GetDanhSachLoaiSanPham()
         {
@@ -37,6 +38,54 @@ namespace DAL
             {
                 //MessageBox.Show("Lỗi database: " + ex.Message);
                 return null;
+            }
+        }
+        #endregion
+
+        #region Thêm Loại Sản Phẩm
+        public bool ThemLoaiSanPham(LoaiSanPhamDTO lspDTO)
+        {
+            try
+            {
+                string sql = "INSERT INTO LOAISANPHAM VALUES(N'" + lspDTO.TenLoaiSP + "',0)";
+                int rows = DataAccess.JustExcuteNoParameter(sql);
+                if (rows > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("Lỗi database: " + ex.Message);
+                return false;
+            }
+        }
+        #endregion
+
+        #region Ngừng Kinh Doanh Sản Phẩm
+        public bool NgungKinhDoanh(string MALOAISP)
+        {
+            try
+            {
+                string sql = "UPDATE LOAISANPHAM SET NGUNGKINHDOANH=1 WHERE MALOAISP='" + MALOAISP + "'";
+                int rows = DataAccess.JustExcuteNoParameter(sql);
+                if (rows > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("Lỗi database: " + ex.Message);
+                return false;
             }
         }
         #endregion

@@ -225,7 +225,7 @@ namespace GUI
             timerPanel.Start();
             Cursor = Cursors.Default;
         }
-        int PanelWidth;
+        int PanelWidth=64;
         bool isCollapsed;
         private void timerpanel_Tick(object sender, EventArgs e)
         {

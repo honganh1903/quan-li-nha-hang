@@ -94,6 +94,18 @@
     <Compile Include="Form\frmNCC.Designer.cs">
       <DependentUpon>frmNCC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\frmThemLoaiSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmThemLoaiSP.Designer.cs">
+      <DependentUpon>frmThemLoaiSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmLoadImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmLoadImage.Designer.cs">
+      <DependentUpon>frmLoadImage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControls\ucBanSanPham.cs">
@@ -153,6 +165,9 @@
     <EmbeddedResource Include="Form\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmLoadImage.resx">
+      <DependentUpon>frmLoadImage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\frmLoaiSanPham.resx">
       <DependentUpon>frmLoaiSanPham.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmNCC.resx">
       <DependentUpon>frmNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmThemLoaiSP.resx">
+      <DependentUpon>frmThemLoaiSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -473,6 +491,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_window_32px_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_window_32px_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_clean_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_window_32px_13.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

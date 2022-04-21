@@ -49,7 +49,7 @@
             this.btnApDung = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnThongTinSanPham = new System.Windows.Forms.Panel();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.btnThemNCC = new System.Windows.Forms.Button();
@@ -94,7 +94,7 @@
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel3.SuspendLayout();
+            this.pnThongTinSanPham.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picHinhAnh)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
@@ -155,6 +155,7 @@
             this.pnlLoaiSP.Name = "pnlLoaiSP";
             this.pnlLoaiSP.Size = new System.Drawing.Size(161, 91);
             this.pnlLoaiSP.TabIndex = 59;
+            this.pnlLoaiSP.Click += new System.EventHandler(this.pnlLoaiSP_Click);
             // 
             // pictureBox1
             // 
@@ -197,7 +198,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.73052F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pnThongTinSanPham, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -313,6 +314,7 @@
             this.btnLamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLamMoi.ForeColor = System.Drawing.Color.White;
+            this.btnLamMoi.Image = global::GUI.Properties.Resources.icons8_clean_32px2;
             this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLamMoi.Location = new System.Drawing.Point(171, 108);
             this.btnLamMoi.Name = "btnLamMoi";
@@ -321,6 +323,7 @@
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLamMoi.UseVisualStyleBackColor = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnApDung
             // 
@@ -329,6 +332,7 @@
             this.btnApDung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnApDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApDung.ForeColor = System.Drawing.Color.White;
+            this.btnApDung.Image = global::GUI.Properties.Resources.success3;
             this.btnApDung.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnApDung.Location = new System.Drawing.Point(49, 108);
             this.btnApDung.Name = "btnApDung";
@@ -337,6 +341,7 @@
             this.btnApDung.Text = "Áp dụng";
             this.btnApDung.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnApDung.UseVisualStyleBackColor = false;
+            this.btnApDung.Click += new System.EventHandler(this.btnApDung_Click);
             // 
             // label7
             // 
@@ -363,45 +368,45 @@
             this.label2.Text = "Bộ lọc";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel3
+            // pnThongTinSanPham
             // 
-            this.panel3.Controls.Add(this.txtSoLuong);
-            this.panel3.Controls.Add(this.label18);
-            this.panel3.Controls.Add(this.btnThemNCC);
-            this.panel3.Controls.Add(this.btnThemLoaiSP);
-            this.panel3.Controls.Add(this.btnLamMoiThongTin);
-            this.panel3.Controls.Add(this.btnNgungKinhDoanh);
-            this.panel3.Controls.Add(this.btnCapNhatSP);
-            this.panel3.Controls.Add(this.dateNgayHetHan);
-            this.panel3.Controls.Add(this.btnThemSP);
-            this.panel3.Controls.Add(this.label17);
-            this.panel3.Controls.Add(this.dateNgaySX);
-            this.panel3.Controls.Add(this.cboNCC);
-            this.panel3.Controls.Add(this.cboLoai);
-            this.panel3.Controls.Add(this.cboDVT);
-            this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.picHinhAnh);
-            this.panel3.Controls.Add(this.label24);
-            this.panel3.Controls.Add(this.txtLoiNhuan);
-            this.panel3.Controls.Add(this.txtGiaNhap);
-            this.panel3.Controls.Add(this.txtKhuyenMai);
-            this.panel3.Controls.Add(this.txtGiaBan);
-            this.panel3.Controls.Add(this.label21);
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.label14);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.label20);
-            this.panel3.Controls.Add(this.txtTen);
-            this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.label22);
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(3, 162);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(601, 461);
-            this.panel3.TabIndex = 2;
+            this.pnThongTinSanPham.Controls.Add(this.txtSoLuong);
+            this.pnThongTinSanPham.Controls.Add(this.label18);
+            this.pnThongTinSanPham.Controls.Add(this.btnThemNCC);
+            this.pnThongTinSanPham.Controls.Add(this.btnThemLoaiSP);
+            this.pnThongTinSanPham.Controls.Add(this.btnLamMoiThongTin);
+            this.pnThongTinSanPham.Controls.Add(this.btnNgungKinhDoanh);
+            this.pnThongTinSanPham.Controls.Add(this.btnCapNhatSP);
+            this.pnThongTinSanPham.Controls.Add(this.dateNgayHetHan);
+            this.pnThongTinSanPham.Controls.Add(this.btnThemSP);
+            this.pnThongTinSanPham.Controls.Add(this.label17);
+            this.pnThongTinSanPham.Controls.Add(this.dateNgaySX);
+            this.pnThongTinSanPham.Controls.Add(this.cboNCC);
+            this.pnThongTinSanPham.Controls.Add(this.cboLoai);
+            this.pnThongTinSanPham.Controls.Add(this.cboDVT);
+            this.pnThongTinSanPham.Controls.Add(this.label16);
+            this.pnThongTinSanPham.Controls.Add(this.picHinhAnh);
+            this.pnThongTinSanPham.Controls.Add(this.label24);
+            this.pnThongTinSanPham.Controls.Add(this.txtLoiNhuan);
+            this.pnThongTinSanPham.Controls.Add(this.txtGiaNhap);
+            this.pnThongTinSanPham.Controls.Add(this.txtKhuyenMai);
+            this.pnThongTinSanPham.Controls.Add(this.txtGiaBan);
+            this.pnThongTinSanPham.Controls.Add(this.label21);
+            this.pnThongTinSanPham.Controls.Add(this.label9);
+            this.pnThongTinSanPham.Controls.Add(this.label14);
+            this.pnThongTinSanPham.Controls.Add(this.label6);
+            this.pnThongTinSanPham.Controls.Add(this.label20);
+            this.pnThongTinSanPham.Controls.Add(this.txtTen);
+            this.pnThongTinSanPham.Controls.Add(this.label13);
+            this.pnThongTinSanPham.Controls.Add(this.label12);
+            this.pnThongTinSanPham.Controls.Add(this.label22);
+            this.pnThongTinSanPham.Controls.Add(this.label11);
+            this.pnThongTinSanPham.Controls.Add(this.label3);
+            this.pnThongTinSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnThongTinSanPham.Location = new System.Drawing.Point(3, 162);
+            this.pnThongTinSanPham.Name = "pnThongTinSanPham";
+            this.pnThongTinSanPham.Size = new System.Drawing.Size(601, 461);
+            this.pnThongTinSanPham.TabIndex = 2;
             // 
             // txtSoLuong
             // 
@@ -413,6 +418,7 @@
             this.txtSoLuong.ReadOnly = true;
             this.txtSoLuong.Size = new System.Drawing.Size(192, 29);
             this.txtSoLuong.TabIndex = 88;
+            this.txtSoLuong.Click += new System.EventHandler(this.txtSoLuong_Click);
             // 
             // label18
             // 
@@ -434,12 +440,14 @@
             this.btnThemNCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemNCC.ForeColor = System.Drawing.Color.White;
-            this.btnThemNCC.Location = new System.Drawing.Point(294, 306);
+            this.btnThemNCC.Image = global::GUI.Properties.Resources.icons8_add_32px2;
+            this.btnThemNCC.Location = new System.Drawing.Point(294, 305);
             this.btnThemNCC.Name = "btnThemNCC";
             this.btnThemNCC.Size = new System.Drawing.Size(35, 31);
             this.btnThemNCC.TabIndex = 86;
             this.btnThemNCC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemNCC.UseVisualStyleBackColor = false;
+            this.btnThemNCC.Click += new System.EventHandler(this.btnThemNCC_Click);
             // 
             // btnThemLoaiSP
             // 
@@ -449,12 +457,14 @@
             this.btnThemLoaiSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemLoaiSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemLoaiSP.ForeColor = System.Drawing.Color.White;
+            this.btnThemLoaiSP.Image = global::GUI.Properties.Resources.icons8_add_32px2;
             this.btnThemLoaiSP.Location = new System.Drawing.Point(294, 269);
             this.btnThemLoaiSP.Name = "btnThemLoaiSP";
             this.btnThemLoaiSP.Size = new System.Drawing.Size(35, 31);
             this.btnThemLoaiSP.TabIndex = 85;
             this.btnThemLoaiSP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemLoaiSP.UseVisualStyleBackColor = false;
+            this.btnThemLoaiSP.Click += new System.EventHandler(this.btnThemLoaiSP_Click);
             // 
             // btnLamMoiThongTin
             // 
@@ -472,6 +482,7 @@
             this.btnLamMoiThongTin.Text = "Làm mới";
             this.btnLamMoiThongTin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLamMoiThongTin.UseVisualStyleBackColor = false;
+            this.btnLamMoiThongTin.Click += new System.EventHandler(this.btnLamMoiThongTin_Click);
             // 
             // btnNgungKinhDoanh
             // 
@@ -489,6 +500,7 @@
             this.btnNgungKinhDoanh.Text = "Ngừng kinh doanh";
             this.btnNgungKinhDoanh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNgungKinhDoanh.UseVisualStyleBackColor = false;
+            this.btnNgungKinhDoanh.Click += new System.EventHandler(this.btnNgungKinhDoanh_Click);
             // 
             // btnCapNhatSP
             // 
@@ -506,6 +518,7 @@
             this.btnCapNhatSP.Text = "Cập nhật";
             this.btnCapNhatSP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCapNhatSP.UseVisualStyleBackColor = false;
+            this.btnCapNhatSP.Click += new System.EventHandler(this.btnCapNhatSP_Click);
             // 
             // dateNgayHetHan
             // 
@@ -537,6 +550,7 @@
             this.btnThemSP.Text = "Thêm";
             this.btnThemSP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemSP.UseVisualStyleBackColor = false;
+            this.btnThemSP.Click += new System.EventHandler(this.btnThemSP_Click);
             // 
             // label17
             // 
@@ -624,6 +638,7 @@
             this.picHinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picHinhAnh.TabIndex = 65;
             this.picHinhAnh.TabStop = false;
+            this.picHinhAnh.Click += new System.EventHandler(this.picHinhAnh_Click);
             // 
             // label24
             // 
@@ -666,6 +681,7 @@
             this.txtKhuyenMai.Name = "txtKhuyenMai";
             this.txtKhuyenMai.Size = new System.Drawing.Size(190, 29);
             this.txtKhuyenMai.TabIndex = 60;
+            this.txtKhuyenMai.Click += new System.EventHandler(this.txtKhuyenMai_Click);
             // 
             // txtGiaBan
             // 
@@ -747,6 +763,7 @@
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(190, 29);
             this.txtTen.TabIndex = 59;
+            this.txtTen.Click += new System.EventHandler(this.txtTen_Click);
             // 
             // label13
             // 
@@ -826,8 +843,10 @@
             this.dgvSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSanPham.Location = new System.Drawing.Point(0, 44);
             this.dgvSanPham.Name = "dgvSanPham";
+            this.dgvSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSanPham.Size = new System.Drawing.Size(619, 417);
             this.dgvSanPham.TabIndex = 60;
+            this.dgvSanPham.Click += new System.EventHandler(this.dgvSanPham_Click);
             // 
             // label4
             // 
@@ -864,8 +883,8 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.pnThongTinSanPham.ResumeLayout(false);
+            this.pnThongTinSanPham.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picHinhAnh)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).EndInit();
@@ -896,7 +915,7 @@
         private System.Windows.Forms.Button btnApDung;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnThongTinSanPham;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label4;
