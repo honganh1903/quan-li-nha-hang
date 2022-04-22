@@ -17,12 +17,14 @@ namespace GUI.UserControls
     {
         public int check = 0;
         public int makh = 0;
+        public int maDS =-1;
         public ucKhachHang()
         {
             InitializeComponent();
         }
         private void load()
         {
+            maDS = -1;
             txtSearch.Visible = false;
             groupBox1.Visible= false;
             dateTimePicker2.Visible = false;
@@ -183,14 +185,12 @@ namespace GUI.UserControls
                     }
                 case 1:
                     {
-                        dgvKhachHang.DataSource = KhachHangBL.Instance.GetDanhSachByName(txtSearch.Text);
-                        dgvKhachHang.Columns[0].Visible = false;
+                        dgvKhachHang.DataSource = KhachHangBL.Instance.GetDanhSachByName(txtSearch.Text,maDS);
                         break;
                     }
                 case 2:
                     {
-                        dgvKhachHang.DataSource = KhachHangBL.Instance.GetDanhSachByDC(txtSearch.Text);
-                        dgvKhachHang.Columns[0].Visible = false;
+                        dgvKhachHang.DataSource = KhachHangBL.Instance.GetDanhSachByDC(txtSearch.Text,maDS);
                         break;
                     }
                 case 3:
@@ -204,28 +204,24 @@ namespace GUI.UserControls
                             bool tmp = new bool();
                             if (rdNam.Checked == true) tmp = true;
                             else tmp = false;
-                            dgvKhachHang.DataSource = KhachHangBL.Instance.GetDanhSachByGT(tmp);
-                            dgvKhachHang.Columns[0].Visible = false;
+                            dgvKhachHang.DataSource = KhachHangBL.Instance.GetDanhSachByGT(tmp,maDS);
                         }
                         break;
                     }
                 case 4:
                     {
-                        dgvKhachHang.DataSource = KhachHangBL.Instance.GetDanhSachBySDT(txtSearch.Text);
-                        dgvKhachHang.Columns[0].Visible = false;
+                        dgvKhachHang.DataSource = KhachHangBL.Instance.GetDanhSachBySDT(txtSearch.Text,maDS);
                         break;
                     }
                 case 5:
                     {
                         DateTime tmp = dateTimePicker2.Value.Date;
-                        dgvKhachHang.DataSource = KhachHangBL.Instance.GetDanhSachByNDK(tmp);
-                        dgvKhachHang.Columns[0].Visible = false;
+                        dgvKhachHang.DataSource = KhachHangBL.Instance.GetDanhSachByNDK(tmp,maDS);
                         break;
                     }
                 case 6:
                     {
-                        dgvKhachHang.DataSource = KhachHangBL.Instance.GetDanhSachByMail(txtSearch.Text);
-                        dgvKhachHang.Columns[0].Visible = false;
+                        dgvKhachHang.DataSource = KhachHangBL.Instance.GetDanhSachByMail(txtSearch.Text,maDS);
                         break;
                     }
             }
@@ -272,9 +268,7 @@ namespace GUI.UserControls
 
         private void btnHienTai_Click(object sender, EventArgs e)
         {
-            txtSearch.Visible = false;
-            groupBox1.Visible = false;
-            dateTimePicker2.Visible = false;
+            maDS = 0;
             dgvKhachHang.DataSource = KhachHangBL.Instance.GetDanhSachKhachHangHT();
             //dgvKhachHang.Columns["Mã khách hàng"].Visible = false;
             //dgvKhachHang.Columns["Đã xóa"].Visible = false;
@@ -282,9 +276,7 @@ namespace GUI.UserControls
 
         private void btnDaXoa_Click(object sender, EventArgs e)
         {
-            txtSearch.Visible = false;
-            groupBox1.Visible = false;
-            dateTimePicker2.Visible = false;
+            maDS = 1;
             dgvKhachHang.DataSource = KhachHangBL.Instance.GetDanhSachKhachHangDX();
             //dgvKhachHang.Columns["Mã khách hàng"].Visible = false;
             //dgvKhachHang.Columns["Đã xóa"].Visible = false;

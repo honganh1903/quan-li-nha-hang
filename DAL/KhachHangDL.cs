@@ -145,11 +145,19 @@ namespace DAL
         }
         #endregion
         #region Lấy danh sách khách hàng theo tên
-        public DataTable GetDanhSachByName(string x)
+        public DataTable GetDanhSachByName(string x,int maDS)
         {
             try
             {
-                string sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE HOTEN LIKE N'%" + x + "%'";
+                string sql;
+                if (maDS != -1)
+                {
+                    sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE HOTEN LIKE N'%" + x + "%' AND DAXOA ='" + maDS + "'";
+                }
+                else
+                {
+                    sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE HOTEN LIKE N'%" + x + "%'";
+                }
                 DataTable dt = new DataTable();
                 dt = DataAccess.GetTable(sql);
                 return dt;
@@ -162,11 +170,19 @@ namespace DAL
         }
         #endregion
         #region Lấy danh sách khách hàng theo địa chỉ
-        public DataTable GetDanhSachByDC(string x)
+        public DataTable GetDanhSachByDC(string x,int maDS)
         {
             try
             {
-                string sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE DIACHI LIKE N'%" + x + "%'";
+                string sql;
+                if (maDS != -1)
+                {
+                    sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE DIACHI LIKE N'%" + x + "%' AND DAXOA ='" + maDS + "'";
+                }
+                else
+                {
+                    sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE DIACHI LIKE N'%" + x + "%'";
+                }
                 DataTable dt = new DataTable();
                 dt = DataAccess.GetTable(sql);
                 return dt;
@@ -179,11 +195,19 @@ namespace DAL
         }
         #endregion
         #region Lấy danh sách khách hàng theo SĐT
-        public DataTable GetDanhSachBySDT(string x)
+        public DataTable GetDanhSachBySDT(string x,int maDS)
         {
             try
             {
-                string sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE SDT LIKE N'%" + x + "%'";
+                string sql;
+                if (maDS != -1)
+                {
+                    sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE SDT LIKE N'%" + x + "%' AND DAXOA ='" + maDS + "'";
+                }
+                else
+                {
+                    sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE SDT LIKE N'%" + x + "%'";
+                }
                 DataTable dt = new DataTable();
                 dt = DataAccess.GetTable(sql);
                 return dt;
@@ -196,11 +220,19 @@ namespace DAL
         }
         #endregion
         #region Lấy danh sách khách hàng theo Giới tính
-        public DataTable GetDanhSachByGT(bool x)
+        public DataTable GetDanhSachByGT(bool x,int maDS)
         {
             try
             {
-                string sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE GIOITINH = '" + x + "'";
+                string sql;
+                if (maDS != -1)
+                {
+                    sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE GIOITINH = '" + x + "' AND DAXOA ='" + maDS + "'";
+                }
+                else
+                {
+                    sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE GIOITINH = '" + x + "'"; 
+                }
                 DataTable dt = new DataTable();
                 dt = DataAccess.GetTable(sql);
                 return dt;
@@ -213,14 +245,25 @@ namespace DAL
         }
         #endregion
         #region Lấy danh sách khách hàng theo Ngày đăng ký
-        public DataTable GetDanhSachByNDK(DateTime x)
+        public DataTable GetDanhSachByNDK(DateTime x,int maDS)
         {
             try
             {
-                string sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE NGAYDANGKY = '" + x + "'";
+                string sql;
+                if (maDS != -1)
+                {
+                    sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE NGAYDANGKY = '" + x + "' AND DAXOA ='" + maDS + "'";
+
+                }
+                else
+                {
+                    sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE NGAYDANGKY = '" + x + "'";
+
+                }
                 DataTable dt = new DataTable();
                 dt = DataAccess.GetTable(sql);
                 return dt;
+
             }
             catch (Exception ex)
             {
@@ -230,11 +273,19 @@ namespace DAL
         }
         #endregion
         #region Lấy danh sách khách hàng theo Email
-        public DataTable GetDanhSachByMail(string x)
+        public DataTable GetDanhSachByMail(string x,int maDS)
         {
             try
             {
-                string sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE EMAIL LIKE N'%" + x + "%'";
+                string sql;
+                if (maDS != -1)
+                {
+                    sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE EMAIL LIKE N'%" + x + "%' AND DAXOA ='" + maDS + "'";
+                }
+                else
+                {
+                    sql = "SELECT MAKH as N'Mã khách hàng',HOTEN as N'Họ tên',DIACHI as N'Địa chỉ',SDT as N'SĐT',GIOITINH as N'Giới tính(Nam)',NGAYDANGKY as N'Ngày đăng ký',EMAIL as N'Email',DOANHSO as N'Doanh số',DAXOA as N'Đã xóa' FROM KHACHHANG WHERE EMAIL LIKE N'%" + x + "%'";
+                }
                 DataTable dt = new DataTable();
                 dt = DataAccess.GetTable(sql);
                 return dt;

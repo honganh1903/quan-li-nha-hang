@@ -47,29 +47,29 @@ namespace BLL
         {
             return KhachHangDL.Instance.XoaKhachHang(khDTO);
         }
-        public DataTable GetDanhSachByName(string x)
+        public DataTable GetDanhSachByName(string x,int maDS)
         {
-            return KhachHangDL.Instance.GetDanhSachByName(x);
+            return KhachHangDL.Instance.GetDanhSachByName(x,maDS);
         }
-        public DataTable GetDanhSachByDC(string x)
+        public DataTable GetDanhSachByDC(string x,int maDS)
         {
-            return KhachHangDL.Instance.GetDanhSachByDC(x);
+            return KhachHangDL.Instance.GetDanhSachByDC(x,maDS);
         }
-        public DataTable GetDanhSachBySDT(string x)
+        public DataTable GetDanhSachBySDT(string x,int maDS)
         {
-            return KhachHangDL.Instance.GetDanhSachBySDT(x);
+            return KhachHangDL.Instance.GetDanhSachBySDT(x,maDS);
         }
-        public DataTable GetDanhSachByMail(string x)
+        public DataTable GetDanhSachByMail(string x,int maDS)
         {
-            return KhachHangDL.Instance.GetDanhSachByMail(x);
+            return KhachHangDL.Instance.GetDanhSachByMail(x,maDS);
         }
-        public DataTable GetDanhSachByGT(bool x)
+        public DataTable GetDanhSachByGT(bool x,int maDS)
         {
-            return KhachHangDL.Instance.GetDanhSachByGT(x);
+            return KhachHangDL.Instance.GetDanhSachByGT(x,maDS);
         }
-        public DataTable GetDanhSachByNDK(DateTime x)
+        public DataTable GetDanhSachByNDK(DateTime x,int maDS)
         {
-            return KhachHangDL.Instance.GetDanhSachByNDK(x);
+            return KhachHangDL.Instance.GetDanhSachByNDK(x,maDS);
         }
     }
 }
