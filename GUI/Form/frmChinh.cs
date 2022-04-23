@@ -287,5 +287,28 @@ namespace GUI
             }
             Cursor = Cursors.Default;
         }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            Cursor = Cursors.AppStarting;
+            moveSidePanel(btnKhachHang);
+            if(btnKhachHang.ForeColor == Color.White)
+            {
+                btnKhachHang.ForeColor = Color.FromArgb(255, 255, 254);
+                btnKhachHang.BackColor = Color.FromArgb(8, 133, 204);
+
+                check_reset(btnKhachHang);
+                AddControl("ucKhachHang");
+            }
+            if (btnKhachHang.ForeColor == Color.White)
+            {
+                btnKhachHang.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 133, 204);
+            }
+            else
+            {
+                btnKhachHang.FlatAppearance.MouseDownBackColor = Color.White;
+            }
+            Cursor = Cursors.Default;
+        }
     }
 }

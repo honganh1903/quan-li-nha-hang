@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChinh));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnThoat = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbQuyen = new System.Windows.Forms.Label();
@@ -41,6 +40,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pnLeft = new System.Windows.Forms.Panel();
             this.pnSide = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnControls = new System.Windows.Forms.Panel();
+            this.timerPanel = new System.Windows.Forms.Timer(this.components);
+            this.btnThoat = new System.Windows.Forms.Button();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.btnKhachHang = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
@@ -48,11 +51,8 @@
             this.btnSanPham = new System.Windows.Forms.Button();
             this.btnBanSanPham = new System.Windows.Forms.Button();
             this.btnTrangChu = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnControls = new System.Windows.Forms.Panel();
-            this.timerPanel = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.pnLeft.SuspendLayout();
@@ -71,19 +71,6 @@
             this.panel2.Size = new System.Drawing.Size(984, 48);
             this.panel2.TabIndex = 1;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnThoat.FlatAppearance.BorderSize = 0;
-            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
-            this.btnThoat.Location = new System.Drawing.Point(918, 10);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(43, 29);
-            this.btnThoat.TabIndex = 1;
-            this.btnThoat.UseVisualStyleBackColor = true;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // label1
             // 
@@ -180,6 +167,43 @@
             this.pnSide.Size = new System.Drawing.Size(10, 64);
             this.pnSide.TabIndex = 3;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(216, 142);
+            this.panel4.TabIndex = 0;
+            // 
+            // pnControls
+            // 
+            this.pnControls.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnControls.Location = new System.Drawing.Point(216, 140);
+            this.pnControls.Name = "pnControls";
+            this.pnControls.Size = new System.Drawing.Size(984, 580);
+            this.pnControls.TabIndex = 3;
+            // 
+            // timerPanel
+            // 
+            this.timerPanel.Interval = 5;
+            this.timerPanel.Tick += new System.EventHandler(this.timerpanel_Tick);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnThoat.FlatAppearance.BorderSize = 0;
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.Location = new System.Drawing.Point(918, 10);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(43, 29);
+            this.btnThoat.TabIndex = 1;
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
             // btnThongKe
             // 
             this.btnThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
@@ -211,6 +235,7 @@
             this.btnKhachHang.TabIndex = 3;
             this.btnKhachHang.Text = "Khách hàng";
             this.btnKhachHang.UseVisualStyleBackColor = false;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // btnNhanVien
             // 
@@ -296,17 +321,6 @@
             this.btnTrangChu.UseVisualStyleBackColor = false;
             this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(216, 142);
-            this.panel4.TabIndex = 0;
-            // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -329,19 +343,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(97, 113);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            // 
-            // pnControls
-            // 
-            this.pnControls.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnControls.Location = new System.Drawing.Point(216, 140);
-            this.pnControls.Name = "pnControls";
-            this.pnControls.Size = new System.Drawing.Size(984, 580);
-            this.pnControls.TabIndex = 3;
-            // 
-            // timerPanel
-            // 
-            this.timerPanel.Interval = 5;
-            this.timerPanel.Tick += new System.EventHandler(this.timerpanel_Tick);
             // 
             // frmChinh
             // 
