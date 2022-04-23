@@ -26,7 +26,7 @@ namespace DAL
             }
         }
         private KhachHangDL() { }
-<<<<<<< HEAD
+
         #region Cập Nhật Doanh Số Khách Hàng
         public bool CapNhatDoanhSoKhachHang(int MAKH, decimal DOANHSO)
         {
@@ -38,7 +38,25 @@ namespace DAL
                 cmd.CommandText = sql;
                 cmd.Parameters.AddWithValue("@MAKH", MAKH);
                 cmd.Parameters.AddWithValue("@DOANHSO", DOANHSO);
-=======
+                cmd.Connection = con;
+                int rows = cmd.ExecuteNonQuery();
+                DataAccess.Disconnect(con);
+                if (rows > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("Lỗi database: " + ex.Message);
+                return false;
+            }
+        }
+        #endregion
         #region Lấy danh sách khách hàng
         public DataTable GetDanhSachKhachHang()
         {
@@ -73,7 +91,7 @@ namespace DAL
                 cmd.Parameters.AddWithValue("@EMAIL", khDTO.Email);
                 cmd.Parameters.AddWithValue("@DOANHSO",khDTO.DoanhSo);
                 cmd.Parameters.AddWithValue("@DAXOA",khDTO.DaXoa);
->>>>>>> 59e11f1f76b4d3ab2ba73f528735de440cf96373
+
                 cmd.Connection = con;
                 int rows = cmd.ExecuteNonQuery();
                 DataAccess.Disconnect(con);
@@ -93,7 +111,7 @@ namespace DAL
             }
         }
         #endregion
-<<<<<<< HEAD
+
 
         #region Lấy Tên Khách Hàng
         public string GetTenKhachHang(string SDT)
@@ -108,7 +126,10 @@ namespace DAL
             }
             catch (Exception)
             {
-=======
+                return null;
+            }
+        }
+        #endregion
         #region Sửa Khách Hàng
         public bool SuaKhachHang(KhachHangDTO khDTO)
         {
@@ -197,14 +218,13 @@ namespace DAL
             catch (Exception ex)
             {
 
->>>>>>> 59e11f1f76b4d3ab2ba73f528735de440cf96373
                 return null;
             }
         }
         #endregion
-<<<<<<< HEAD
 
-        #region Lấy Tên Mã Khách Hàng
+
+        #region Lấy Mã Tên Khách Hàng
         public string GetTenMaKH(string SDT)
         {
             try
@@ -217,7 +237,10 @@ namespace DAL
             }
             catch (Exception)
             {
-=======
+                return null;
+            }
+        }
+        #endregion
         #region Lấy danh sách khách hàng theo địa chỉ
         public DataTable GetDanhSachByDC(string x,int maDS)
         {
@@ -376,7 +399,6 @@ namespace DAL
             catch (Exception ex)
             {
                 //MessageBox.Show("Lỗi database: " + ex.Message);
->>>>>>> 59e11f1f76b4d3ab2ba73f528735de440cf96373
                 return null;
             }
         }
