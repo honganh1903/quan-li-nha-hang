@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using DAL;
 
 namespace BLL
 {
@@ -21,5 +23,9 @@ namespace BLL
             }
         }
         private CTHDBL() { }
+        public bool ThemCTHD(DataTable dt, int SOHD, decimal THANHTIEN)
+        {
+            return CTHDDL.Instance.ThemCTHD(dt, SOHD, THANHTIEN);
+        }
     }
 }

@@ -123,7 +123,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmChonNCC";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmChonNCC";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.frmChonNCC_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

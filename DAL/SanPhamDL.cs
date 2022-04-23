@@ -282,5 +282,54 @@ namespace DAL
             }
         }
         #endregion
+
+        #region Lấy Danh Sách DVT
+        public DataTable GetDanhSachDVT()
+        {
+            try
+            {
+                string sql = "SELECT DISTINCT DVT AS N'Đơn Vị Tính',MASP AS N'Mã SP' FROM SANPHAM WHERE NGUNGKINHDOANH=0";
+                DataTable dt = new DataTable();
+                dt = DataAccess.GetTable(sql);
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("Lỗi database: " + ex.Message);
+                return null;
+            }
+        }
+        #endregion
+
+        #region Cập Nhật Số Lượng Khi Bán Hàng
+        public bool CapNhatSoLuongKhiBanHang(int MaSP, int SoLuong)
+        {
+            try
+            {
+                string sql = "UPDATE SANPHAM SET SoLuong = SoLuong-@SoLuong WHERE MASP = @MASP";
+                SqlConnection con = DataAccess.Openconnect();
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = sql;
+                cmd.Parameters.AddWithValue("@MASP", MaSP);
+                cmd.Parameters.AddWithValue("@SOLUONG", SoLuong);
+                cmd.Connection = con;
+                int rows = cmd.ExecuteNonQuery();
+                DataAccess.Disconnect(con);
+                if (rows > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("Lỗi database: " + ex.Message);
+                return false;
+            }
+        }
+        #endregion
     }
 }

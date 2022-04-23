@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL;
+using DTO;
 
 namespace BLL
 {
@@ -21,5 +23,17 @@ namespace BLL
             }
         }
         private KhachHangBL() { }
+        public bool CapNhatDoanhSoKhachHang(int MAKH, decimal DOANHSO)
+        {
+            return KhachHangDL.Instance.CapNhatDoanhSoKhachHang(MAKH, DOANHSO);
+        }
+        public string GetTenKhachHang(string SDT)
+        {
+            return KhachHangDL.Instance.GetTenKhachHang(SDT);
+        }
+        public string GetTenMaKH(string SDT)
+        {
+            return KhachHangDL.Instance.GetTenMaKH(SDT);
+        }
     }
 }

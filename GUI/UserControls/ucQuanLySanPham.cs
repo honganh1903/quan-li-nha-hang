@@ -87,8 +87,9 @@ namespace GUI.UserControls
 
         private void LoadCboDVT()
         {
-            //cboDVT.DataSource= SanPhamBL.Instance.getdon
-            cboDVT.SelectedIndex = 0;
+            cboDVT.DataSource = SanPhamBL.Instance.GetDanhSachDVT();
+            cboDVT.ValueMember = "Đơn Vị Tính";
+            cboLoai.DisplayMember = "Mã SP";
         }
 
         private void LoadCboLoaiSP()

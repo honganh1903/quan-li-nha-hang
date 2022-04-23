@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL;
+using DTO;
+using System.Data;
 
 namespace BLL
 {
@@ -21,5 +24,25 @@ namespace BLL
             }
         }
         private HoaDonBL() { }
+        public bool ThemHoaDon(HoaDonDTO hdDTO)
+        {
+            return HoaDonDL.Instance.ThemHoaDon(hdDTO);
+        }
+        public int GetSOHDMAX()
+        {
+            return HoaDonDL.Instance.GetSOHDMax();
+        }
+        public bool CapNhatSoLuongTienKhachHang(int SOHD, decimal TienKhachHangTra, decimal TienThua)
+        {
+            return HoaDonDL.Instance.CapNhatSoLuongTienKhachHang(SOHD, TienKhachHangTra, TienThua);
+        }
+        public bool XoaHD(int SOHD)
+        {
+            return HoaDonDL.Instance.XoaHD(SOHD);
+        }
+        public DataSet InHoaDon(int SOHD)
+        {
+            return HoaDonDL.Instance.InHoaDon(SOHD);
+        }
     }
 }
