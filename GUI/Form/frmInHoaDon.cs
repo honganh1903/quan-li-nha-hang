@@ -28,6 +28,10 @@ namespace GUI
             this.reportViewer1.LocalReport.DataSources.Clear();
             this.reportViewer1.LocalReport.DataSources.Add(dataSource);
             this.reportViewer1.RefreshReport();
+<<<<<<< HEAD
+=======
+            this.reportViewer1.RefreshReport();
+>>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
         }
     }
 }

@@ -3,11 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 
 using DTO;
 using DAL;
 using System.Data;
 
+=======
+<<<<<<< HEAD
+using DAL;
+using DTO;
+
+=======
+using DTO;
+using DAL;
+using System.Data;
+>>>>>>> 59e11f1f76b4d3ab2ba73f528735de440cf96373
+>>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
 namespace BLL
 {
     public class KhachHangBL
@@ -25,7 +37,23 @@ namespace BLL
             }
         }
         private KhachHangBL() { }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+        public bool CapNhatDoanhSoKhachHang(int MAKH, decimal DOANHSO)
+        {
+            return KhachHangDL.Instance.CapNhatDoanhSoKhachHang(MAKH, DOANHSO);
+        }
+        public string GetTenKhachHang(string SDT)
+        {
+            return KhachHangDL.Instance.GetTenKhachHang(SDT);
+        }
+        public string GetTenMaKH(string SDT)
+        {
+            return KhachHangDL.Instance.GetTenMaKH(SDT);
+=======
+>>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
         public DataTable GetDanhSachKhachHang()
         {
             return KhachHangDL.Instance.GetDanhSachKhachHang();
@@ -72,6 +100,7 @@ namespace BLL
         }
         public DataTable GetDanhSachByNDK(DateTime x, int maDS)
         {
+<<<<<<< HEAD
             return KhachHangDL.Instance.GetDanhSachByNDK(x, maDS);
 
         }
@@ -88,5 +117,9 @@ namespace BLL
             return KhachHangDL.Instance.GetTenMaKH(SDT);
         } 
 
+=======
+            return KhachHangDL.Instance.GetDanhSachByNDK(x,maDS);
+>>>>>>> 59e11f1f76b4d3ab2ba73f528735de440cf96373
+>>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
         }
     }

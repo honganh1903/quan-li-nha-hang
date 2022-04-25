@@ -50,7 +50,11 @@
             this.lblGiaKM.AutoSize = true;
             this.lblGiaKM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblGiaKM.ForeColor = System.Drawing.Color.DarkOrange;
+<<<<<<< HEAD
             this.lblGiaKM.Location = new System.Drawing.Point(4, 111);
+=======
+            this.lblGiaKM.Location = new System.Drawing.Point(4, 117);
+>>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
             this.lblGiaKM.Name = "lblGiaKM";
             this.lblGiaKM.Size = new System.Drawing.Size(94, 20);
             this.lblGiaKM.TabIndex = 11;
@@ -61,7 +65,11 @@
             this.lblTenSP.AutoEllipsis = true;
             this.lblTenSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.lblTenSP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+<<<<<<< HEAD
             this.lblTenSP.Location = new System.Drawing.Point(6, 96);
+=======
+            this.lblTenSP.Location = new System.Drawing.Point(6, 102);
+>>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
             this.lblTenSP.Name = "lblTenSP";
             this.lblTenSP.Size = new System.Drawing.Size(130, 19);
             this.lblTenSP.TabIndex = 12;
@@ -80,7 +88,11 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+<<<<<<< HEAD
             this.pictureBox2.Location = new System.Drawing.Point(113, 109);
+=======
+            this.pictureBox2.Location = new System.Drawing.Point(113, 115);
+>>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(33, 26);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -91,7 +103,11 @@
             // 
             this.lblSanCo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.lblSanCo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+<<<<<<< HEAD
             this.lblSanCo.Location = new System.Drawing.Point(74, 133);
+=======
+            this.lblSanCo.Location = new System.Drawing.Point(74, 139);
+>>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
             this.lblSanCo.Name = "lblSanCo";
             this.lblSanCo.Size = new System.Drawing.Size(67, 18);
             this.lblSanCo.TabIndex = 13;
@@ -103,7 +119,11 @@
             this.lblGiaGoc.AutoSize = true;
             this.lblGiaGoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.lblGiaGoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+<<<<<<< HEAD
             this.lblGiaGoc.Location = new System.Drawing.Point(6, 131);
+=======
+            this.lblGiaGoc.Location = new System.Drawing.Point(6, 137);
+>>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
             this.lblGiaGoc.Name = "lblGiaGoc";
             this.lblGiaGoc.Size = new System.Drawing.Size(43, 13);
             this.lblGiaGoc.TabIndex = 14;
