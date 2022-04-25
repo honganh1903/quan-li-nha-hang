@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using DTO;
 using DAL;
 using System.Data;
+
 namespace BLL
 {
     public class KhachHangBL
@@ -23,6 +25,7 @@ namespace BLL
             }
         }
         private KhachHangBL() { }
+
         public DataTable GetDanhSachKhachHang()
         {
             return KhachHangDL.Instance.GetDanhSachKhachHang();
@@ -47,29 +50,43 @@ namespace BLL
         {
             return KhachHangDL.Instance.XoaKhachHang(khDTO);
         }
-        public DataTable GetDanhSachByName(string x,int maDS)
+        public DataTable GetDanhSachByName(string x, int maDS)
         {
-            return KhachHangDL.Instance.GetDanhSachByName(x,maDS);
+            return KhachHangDL.Instance.GetDanhSachByName(x, maDS);
         }
-        public DataTable GetDanhSachByDC(string x,int maDS)
+        public DataTable GetDanhSachByDC(string x, int maDS)
         {
-            return KhachHangDL.Instance.GetDanhSachByDC(x,maDS);
+            return KhachHangDL.Instance.GetDanhSachByDC(x, maDS);
         }
-        public DataTable GetDanhSachBySDT(string x,int maDS)
+        public DataTable GetDanhSachBySDT(string x, int maDS)
         {
-            return KhachHangDL.Instance.GetDanhSachBySDT(x,maDS);
+            return KhachHangDL.Instance.GetDanhSachBySDT(x, maDS);
         }
-        public DataTable GetDanhSachByMail(string x,int maDS)
+        public DataTable GetDanhSachByMail(string x, int maDS)
         {
-            return KhachHangDL.Instance.GetDanhSachByMail(x,maDS);
+            return KhachHangDL.Instance.GetDanhSachByMail(x, maDS);
         }
-        public DataTable GetDanhSachByGT(bool x,int maDS)
+        public DataTable GetDanhSachByGT(bool x, int maDS)
         {
-            return KhachHangDL.Instance.GetDanhSachByGT(x,maDS);
+            return KhachHangDL.Instance.GetDanhSachByGT(x, maDS);
         }
-        public DataTable GetDanhSachByNDK(DateTime x,int maDS)
+        public DataTable GetDanhSachByNDK(DateTime x, int maDS)
         {
-            return KhachHangDL.Instance.GetDanhSachByNDK(x,maDS);
+            return KhachHangDL.Instance.GetDanhSachByNDK(x, maDS);
+
+        }
+        public bool CapNhatDoanhSoKhachHang(int MAKH, decimal DOANHSO)
+        {
+            return KhachHangDL.Instance.CapNhatDoanhSoKhachHang(MAKH, DOANHSO);
+        }
+        public string GetTenKhachHang(string SDT)
+        {
+            return KhachHangDL.Instance.GetTenKhachHang(SDT);
+        }
+        public string GetTenMaKH(string SDT)
+        {
+            return KhachHangDL.Instance.GetTenMaKH(SDT);
+        } 
+
         }
     }
-}

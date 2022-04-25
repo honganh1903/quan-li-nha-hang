@@ -53,7 +53,25 @@ namespace GUI
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Cursor = Cursors.AppStarting;
+            moveSidePanel(btnBanSanPham);
+            if (btnBanSanPham.ForeColor == Color.White)
+            {
+                btnBanSanPham.ForeColor = Color.FromArgb(255, 255, 254);
+                btnBanSanPham.BackColor = Color.FromArgb(8, 133, 204);
 
+                check_reset(btnBanSanPham);
+                AddControl("ucBanSanPham");
+            }
+            if (btnBanSanPham.ForeColor == Color.White)
+            {
+                btnBanSanPham.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 133, 204);
+            }
+            else
+            {
+                btnBanSanPham.FlatAppearance.MouseDownBackColor = Color.White;
+            }
+            Cursor = Cursors.Default;
         }
 
         private void frmChinh_Load(object sender, EventArgs e)
@@ -106,18 +124,14 @@ namespace GUI
             {
                 pnControls.Controls.Remove(uc);
             }
-            //Add vào ProgressBar từ ucProgressBar
+
             ucProgressbar ucprogress = new ucProgressbar();
             ucprogress.Dock = DockStyle.Fill;
             pnControls.Controls.Add(ucprogress);
             pnControls.Controls["ucProgressBar"].BringToFront();
-            //Ánh xạ lên biến toàn cục
-            //ProgressBar = ucprogress.progressLoading;
-            //lblPhanTram = ucprogress.lblPhanTram;
 
-            //taskLoadProgressBar = new Task(LoadProgressBar);
             taskLoadUserControl = new Task(LoadUserControl);
-            //taskLoadProgressBar.Start();
+
             taskLoadUserControl.Start();
         }
 

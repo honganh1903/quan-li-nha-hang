@@ -52,5 +52,14 @@ namespace BLL
         {
             return SanPhamDL.Instance.GetDanhSachSanPhamTheoBoLoc(TENSP, MALOAISP, MANCC);
         }
+
+        public DataTable GetDanhSachDVT()
+        {
+            return SanPhamDL.Instance.GetDanhSachDVT();
+        }
+        public bool CapNhatSoLuongKhiBanHang(int MaSP, int SoLuong)
+        {
+            return SanPhamDL.Instance.CapNhatSoLuongKhiBanHang(MaSP, SoLuong);
+        }
     }
 }

@@ -285,6 +285,7 @@
             this.dgvNCC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvNCC.Location = new System.Drawing.Point(0, 0);
             this.dgvNCC.Name = "dgvNCC";
+            this.dgvNCC.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvNCC.Size = new System.Drawing.Size(482, 233);
             this.dgvNCC.TabIndex = 0;
             this.dgvNCC.Click += new System.EventHandler(this.dgvNCC_Click);
