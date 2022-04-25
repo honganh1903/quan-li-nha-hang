@@ -166,6 +166,9 @@
   <data name="logo_black___Copy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_black - Copy2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_add_32px_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_add_32px_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_Show_Left_Side_Panel_32px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_Show_Left_Side_Panel_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -193,13 +196,8 @@
   <data name="thietlap_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thietlap_black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
-  <data name="icons8_no_access_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_no_access_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
   <data name="nhanvien_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nhanvien_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
   </data>
   <data name="icons8_add_32px_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_add_32px_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -227,12 +225,6 @@
     <value>..\Resources\check (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 =======
 >>>>>>> 59e11f1f76b4d3ab2ba73f528735de440cf96373
-  </data>
-  <data name="success4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\success.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="check (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\check (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="thongke_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thongke_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -321,15 +313,12 @@
   <data name="logo_black___Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_black - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
   <data name="logo_black___Copy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_black - Copy1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_next_32px_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_next_32px_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-=======
->>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
   <data name="icons8_minimize_window_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_minimize_window_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -426,12 +415,9 @@
   <data name="icons8_clean_32px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_clean_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
   <data name="icons8_clean_32px11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_clean_32px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-=======
->>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
   <data name="banhang_black2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\banhang_black2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -460,10 +446,6 @@
     <value>..\Resources\icons8_close_window_32px_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 <<<<<<< HEAD
-  <data name="check2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
-<<<<<<< HEAD
   <data name="icons8_customer_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_customer_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -474,7 +456,6 @@
 >>>>>>> 59e11f1f76b4d3ab2ba73f528735de440cf96373
   <data name="eco-factory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eco-factory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
   </data>
   <data name="check__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\check (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -485,13 +466,8 @@
   <data name="icons8_search_24px2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_search_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
   <data name="icons8_customer_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_customer_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
-  <data name="icons8_no_entry_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_no_entry_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
   </data>
   <data name="icons8_trash_can_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_trash_can_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -551,14 +527,9 @@
   <data name="icons8_close_window_32px_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_close_window_32px_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 =======
-<<<<<<< HEAD
-  <data name="icons8_close_window_32px_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_close_window_32px_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
   <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 >>>>>>> 59e11f1f76b4d3ab2ba73f528735de440cf96373
->>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
   </data>
   <data name="logo_black___Copy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_black - Copy1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -579,13 +550,8 @@
   <data name="edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
-  <data name="icons8_next_32px_51" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_next_32px_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
   <data name="edit11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 >>>>>>> 59e11f1f76b4d3ab2ba73f528735de440cf96373
->>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
   </data>
 </root>

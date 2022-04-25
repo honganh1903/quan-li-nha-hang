@@ -62,17 +62,6 @@
             this.lblTongTien = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvCTHD = new System.Windows.Forms.DataGridView();
-<<<<<<< HEAD
-            this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Giam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-=======
->>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
             this.panel8 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -83,8 +72,6 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
-=======
             this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -93,7 +80,6 @@
             this.Tong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Giam = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tang = new System.Windows.Forms.DataGridViewTextBoxColumn();
->>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -559,65 +545,6 @@
             this.dgvCTHD.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCTHD_CellContentClick);
             this.dgvCTHD.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvCTHD_KeyDown);
             // 
-<<<<<<< HEAD
-            // MaSP
-            // 
-            this.MaSP.HeaderText = "Mã SP";
-            this.MaSP.Name = "MaSP";
-            this.MaSP.ReadOnly = true;
-            this.MaSP.Visible = false;
-            // 
-            // TenSP
-            // 
-            this.TenSP.HeaderText = "Tên SP";
-            this.TenSP.Name = "TenSP";
-            this.TenSP.ReadOnly = true;
-            this.TenSP.Width = 144;
-            // 
-            // DonGia
-            // 
-            this.DonGia.HeaderText = "Đơn Giá";
-            this.DonGia.Name = "DonGia";
-            this.DonGia.ReadOnly = true;
-            this.DonGia.Width = 90;
-            // 
-            // KM
-            // 
-            this.KM.HeaderText = "KM";
-            this.KM.Name = "KM";
-            this.KM.ReadOnly = true;
-            this.KM.Width = 40;
-            // 
-            // SL
-            // 
-            this.SL.HeaderText = "SL";
-            this.SL.Name = "SL";
-            this.SL.ReadOnly = true;
-            this.SL.Width = 40;
-            // 
-            // Tong
-            // 
-            this.Tong.HeaderText = "Tổng";
-            this.Tong.Name = "Tong";
-            this.Tong.ReadOnly = true;
-            this.Tong.Width = 50;
-            // 
-            // Giam
-            // 
-            this.Giam.HeaderText = "";
-            this.Giam.Name = "Giam";
-            this.Giam.ReadOnly = true;
-            this.Giam.Width = 25;
-            // 
-            // Tang
-            // 
-            this.Tang.HeaderText = "";
-            this.Tang.Name = "Tang";
-            this.Tang.ReadOnly = true;
-            this.Tang.Width = 25;
-            // 
-=======
->>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
             // panel8
             // 
             this.panel8.Controls.Add(this.label3);
@@ -701,10 +628,6 @@
             // 
             // flowLayoutPanelSanPham
             // 
-<<<<<<< HEAD
-            this.flowLayoutPanelSanPham.AutoScroll = true;
-=======
->>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
             this.flowLayoutPanelSanPham.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanelSanPham.Controls.Add(this.panel10);
             this.flowLayoutPanelSanPham.Dock = System.Windows.Forms.DockStyle.Top;
@@ -748,8 +671,6 @@
             this.label4.Text = "Thông Tin Hóa Đơn";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-<<<<<<< HEAD
-=======
             // MaSP
             // 
             this.MaSP.HeaderText = "Mã SP";
@@ -806,7 +727,6 @@
             this.Tang.ReadOnly = true;
             this.Tang.Width = 25;
             // 
->>>>>>> 1d2968237a66b7aa77cabd4a5387fc72f73bebea
             // ucBanSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
