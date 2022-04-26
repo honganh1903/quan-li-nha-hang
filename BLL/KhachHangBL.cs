@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DTO;
 
-=======
+
 using DTO;
 using DAL;
 using System.Data;
+
 namespace BLL
 {
     public class KhachHangBL
@@ -26,7 +26,7 @@ namespace BLL
             }
         }
         private KhachHangBL() { }
-<<<<<<< HEAD
+
         public bool CapNhatDoanhSoKhachHang(int MAKH, decimal DOANHSO)
         {
             return KhachHangDL.Instance.CapNhatDoanhSoKhachHang(MAKH, DOANHSO);
@@ -38,7 +38,7 @@ namespace BLL
         public string GetTenMaKH(string SDT)
         {
             return KhachHangDL.Instance.GetTenMaKH(SDT);
-=======
+        }
         public DataTable GetDanhSachKhachHang()
         {
             return KhachHangDL.Instance.GetDanhSachKhachHang();
@@ -86,20 +86,6 @@ namespace BLL
         public DataTable GetDanhSachByNDK(DateTime x, int maDS)
         {
             return KhachHangDL.Instance.GetDanhSachByNDK(x, maDS);
-
-        }
-        public bool CapNhatDoanhSoKhachHang(int MAKH, decimal DOANHSO)
-        {
-            return KhachHangDL.Instance.CapNhatDoanhSoKhachHang(MAKH, DOANHSO);
-        }
-        public string GetTenKhachHang(string SDT)
-        {
-            return KhachHangDL.Instance.GetTenKhachHang(SDT);
-        }
-        public string GetTenMaKH(string SDT)
-        {
-            return KhachHangDL.Instance.GetTenMaKH(SDT);
-        } 
 
         }
     }
