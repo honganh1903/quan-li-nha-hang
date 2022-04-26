@@ -600,7 +600,7 @@
     <None Include="Resources\search.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\editm.png" />
+	  <None Include="Resources\editm.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\edit1.png" />

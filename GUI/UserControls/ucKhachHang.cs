@@ -31,7 +31,6 @@ namespace GUI.UserControls
             dgvKhachHang.DataSource = KhachHangBL.Instance.GetDanhSachKhachHang();
             dgvKhachHang.Columns["Mã khách hàng"].Visible = false;
             dgvKhachHang.Columns["Đã xóa"].Visible = false;
-            Lock();
         }
         private void ucKhachHang_Load(object sender, EventArgs e)
         {
@@ -41,13 +40,11 @@ namespace GUI.UserControls
         {
             txtTenKH.ReadOnly = true;
             txtDiaChi.ReadOnly = true;
-            rdNam1.Enabled = false;
-            rdNu1.Enabled = false;
+            groupBox2.Enabled = true;
             txtsdt.ReadOnly = true;
             txtEmail.ReadOnly = true;
             txtDoanhSo.ReadOnly = true;
             CheckXoa.Enabled = false;
-            btnOK.Enabled = false;
         }
         private void UnLock()
         {
@@ -55,8 +52,7 @@ namespace GUI.UserControls
             txtTenKH.Text = "";
             txtDiaChi.ReadOnly = false;
             txtDiaChi.Text = "";
-            rdNam1.Enabled = true;
-            rdNu1.Enabled = true;
+            groupBox2.Enabled = true;
             rdNu1.Checked = false;
             rdNam1.Checked = false;
             txtsdt.ReadOnly = false;
@@ -65,7 +61,6 @@ namespace GUI.UserControls
             txtEmail.Text = "";
             txtDoanhSo.ReadOnly = false;
             txtDoanhSo.Text = "0";
-            btnOK.Enabled = true;
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -79,7 +74,7 @@ namespace GUI.UserControls
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            if (dgvKhachHang.SelectedRows.Count != 1)
+            if (dgvKhachHang.SelectedRows.Count == 0)
                 MessageBox.Show("Vui lòng chọn dòng cần sửa");
             if(dgvKhachHang.SelectedRows.Count==1)
             {
